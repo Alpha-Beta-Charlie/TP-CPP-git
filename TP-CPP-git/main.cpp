@@ -1,5 +1,6 @@
+#include <iostream>
+
 int main() {
-	return 0;
+//salut c le debut
+	
 }
-//je suis beau
-//uu
