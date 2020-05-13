@@ -1,3 +1,6 @@
+#include <iostream>
+
 int main() {
-	return 0;
+	std::cout << "aintoine t moche" << std::endl;
+	
 }
