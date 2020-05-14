@@ -13,3 +13,4 @@ void Menu::affichageMenu()
 	std::cout << "        - 5: Pour lancer la detection de contour de votre image." << std::endl;
 	std::cout << "        - 6: Pour rentrez dans le menu 'Segmentation d'image'. " << std::endl;
 }
+//bonjour
