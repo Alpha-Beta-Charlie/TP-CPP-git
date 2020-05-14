@@ -9,5 +9,6 @@ public:
 	void affichageMenuFlitrage();
 	void affichageMenuOperationMorphologieMath();
 	void affichageMenuSegmentationImage();
+	void choixMenu();
 };
 

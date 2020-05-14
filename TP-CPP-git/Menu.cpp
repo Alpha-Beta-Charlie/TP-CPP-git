@@ -29,3 +29,8 @@ void Menu::affichageMenuSegmentationImage() {
 		std::cout << "Tapez:  - 1: pour lancer l'Operations de seuillages" << std::endl;
 		std::cout << "Tapez:  - 2: pour lancer la Segmentation par croissance de région" << std::endl;
 }
+void Menu::choixMenuMenu() {
+
+
+
+}
