@@ -2,6 +2,8 @@
 #include <iostream>
 class Menu
 {
+public:
+
 	Menu();
 	void affichageMenu();
 	void affichageMenuFlitrage();

@@ -1,6 +1,8 @@
 #pragma once
 class voirImage
 {
-	voirImage();
+public:
+
+	 void voirIm();
 };
 
