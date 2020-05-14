@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 # include "voirImage.h"
+# include "voirImage.h"
+#include "Filtre.h"
 class Menu
 {
 public:
