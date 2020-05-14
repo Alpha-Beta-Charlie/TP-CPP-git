@@ -141,11 +141,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Filtre.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="voirImage.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Filtre.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="voirImage.h" />
   </ItemGroup>

@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+# include "voirImage.h"
 class Menu
 {
 public:

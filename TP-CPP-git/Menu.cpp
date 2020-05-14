@@ -29,8 +29,72 @@ void Menu::affichageMenuSegmentationImage() {
 		std::cout << "Tapez:  - 1: pour lancer l'Operations de seuillages" << std::endl;
 		std::cout << "Tapez:  - 2: pour lancer la Segmentation par croissance de région" << std::endl;
 }
-void Menu::choixMenuMenu() {
+using namespace cv;
+void Menu::choixMenu() {
 
+	voirImage test;
+	Mat imagesec = test.Choisir();
+	Menu rt;
+debut:
+	rt.affichageMenu();
+	int choix;
+	std::cin >> choix;
+	if (choix == 1) {
+		test.voirIm(imagesec);
+		goto debut;
+	}
+	else if (choix == 2) {
+		choix1:
+		rt.affichageMenuFlitrage();
+		int rt;
+		std::cin >> rt;
+		if (rt == 1) {
 
+		}
+		else if (rt == 2) {
+
+		}
+		else {
+			std::cout << "la commande n'est pas valide" <<std::endl;
+			goto choix1;
+		}
+	}
+	else if (choix == 4) {
+		choix2:
+		rt.affichageMenuOperationMorphologieMath();
+		int pp;
+		std::cin >> pp;
+		if (pp == 1) {
+
+		}
+		else if (pp== 2) {
+
+		}
+		else {
+			std::cout << "la commande n'est pas valide" << std::endl;
+			goto choix2;
+		}
+	}
+	else if (choix == 6) {
+		choix3:
+		rt.affichageMenuSegmentationImage();
+
+		int bb;
+		std::cin >> bb;
+		if (bb == 1) {
+
+		}
+		else if (bb == 2) {
+
+		}
+		else {
+			std::cout << "la commande n'est pas valide" << std::endl;
+			goto choix3;
+		}
+	}
+	else {
+		std::cout << "Erreur, veuillez recommencer." << std::endl;
+		goto debut;
+	}
 
 }
