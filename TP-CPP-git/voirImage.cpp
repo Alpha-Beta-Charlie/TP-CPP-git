@@ -13,16 +13,16 @@ void voirImage::voirIm()
     cin >> AdresseIm;
     Mat image = imread(AdresseIm);
 
-    if (image.empty()) {                                    // je regarde si l'image existe
+   /* if (image.empty()) {                                    // je regarde si l'image existe
         cout << "Impossible de trouver l'image" << endl;
         cin.get();                                          //en attente d'une touche 
         
     }
-    string windowName = "Image";
-    namedWindow(windowName);
-    imshow(windowName, image);                              //affichage de l'image
+  */
+    namedWindow("image",WINDOW_NORMAL);
+    imshow("image", image);                              //affichage de l'image
     waitKey(0);
-    destroyWindow(windowName);
+    
 
   
 }
