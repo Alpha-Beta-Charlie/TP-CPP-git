@@ -4,5 +4,8 @@ class Menu
 {
 	Menu();
 	void affichageMenu();
+	void affichageMenuFlitrage();
+	void affichageMenuOperationMorphologieMath();
+	void affichageMenuSegmentationImage();
 };
 
