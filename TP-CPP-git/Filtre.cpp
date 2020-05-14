@@ -61,9 +61,9 @@ void FiltreGaussien() {
     */
 }
 void FiltreMedian() {
-    cv::Mat imagesec = test.Choisir();
+    cv::Mat imagesec = voirImage::partage;
     cv::Mat image2;
-    medianBlur(imagesec, image2, ksize)
+    medianBlur(imagesec, image2,15)
 
         /*
         import org.opencv.core.Core;

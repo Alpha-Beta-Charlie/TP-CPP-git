@@ -14,7 +14,7 @@ void voirImage::voirIm(cv::Mat _image)
 
 cv::Mat voirImage::Choisir()
 {
-    string AdresseIm;                                     // Création de la varible adresse de l'image
+                                       // Création de la varible adresse de l'image
     Mat image;                             //creation de l'image
     do {
         cout << "entrez l'adresse de votre image:" << endl;
@@ -26,3 +26,4 @@ cv::Mat voirImage::Choisir()
     } while (image.empty() == true);
     return image;
 }
+cv::Mat partage= imread(voirImage::voirImage::AdresseIm)

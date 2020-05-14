@@ -6,6 +6,8 @@ class voirImage
 {
 public:
 
+	std::string AdresseIm;
+	cv::Mat partage;
 	 void voirIm(cv::Mat _image);
 	 cv::Mat Choisir();
 };
