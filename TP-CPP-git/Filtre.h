@@ -9,7 +9,7 @@ class Filtre
 {
 public:
 	Filtre();
-	void FiltreGaussien(cv::Mat _image);
+	cv::Mat FiltreGaussien(cv::Mat _image);
 	cv::Mat FiltreMedian(cv::Mat _image);
 };
 

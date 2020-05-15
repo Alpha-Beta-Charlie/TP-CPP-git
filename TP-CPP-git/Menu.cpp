@@ -55,7 +55,9 @@ debut:
 			goto debut;
 		}
 		else if (rt == 2) {
-
+			Mat imageGaussien = ttfil.FiltreGaussien(imagesec);
+			test.voirIm(imageGaussien, "Image avec filtre gaussien");
+			goto debut;
 		}
 		else {
 			std::cout << "la commande n'est pas valide" <<std::endl;
