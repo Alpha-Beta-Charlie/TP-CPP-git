@@ -11,5 +11,6 @@ public:
 	Filtre();
 	cv::Mat FiltreGaussien(cv::Mat _image);
 	cv::Mat FiltreMedian(cv::Mat _image);
+	cv::Mat sobel(cv::Mat _image);
 };
 

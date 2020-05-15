@@ -25,7 +25,7 @@ void Menu::affichageMenuOperationMorphologieMath() {
 
 }
 void Menu::affichageMenuSegmentationImage() {
-		std::cout << "~~~~~~~~~~~~~ Menu de Segmentations d’images~~~~~~~~~~~~" << std::endl;
+		std::cout << "~~~~~~~~~~~~~ Menu de Segmentations d’images ~~~~~~~~~~~~" << std::endl;
 		std::cout << "Tapez:  - 1: pour lancer l'Operations de seuillages" << std::endl;
 		std::cout << "Tapez:  - 2: pour lancer la Segmentation par croissance de région" << std::endl;
 }
@@ -63,6 +63,11 @@ debut:
 			std::cout << "la commande n'est pas valide" <<std::endl;
 			goto choix1;
 		}
+	}
+	else if (choix == 3) {
+		Mat imageGradient = ttfil.sobel(imagesec);
+		test.voirIm(imageGradient, "Image avec filtre gaussien");
+		goto debut;
 	}
 	else if (choix == 4) {
 		choix2:
