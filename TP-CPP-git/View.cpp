@@ -1,9 +1,9 @@
 #include "View.h"
 
-Menu::Menu()
+View::View()
 {
 }
-void Menu::affichageMenu()
+void View::affichageMenu()
 {
 	std::cout << "~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour voir votre image." << std::endl;
@@ -13,18 +13,18 @@ void Menu::affichageMenu()
 	std::cout << "        - 5: Pour lancer la detection de contour de votre image." << std::endl;
 	std::cout << "        - 6: Pour rentrez dans le menu 'Segmentation d'image'. " << std::endl;
 }
-void Menu::affichageMenuFlitrage() {
+void View::affichageMenuFlitrage() {
 	std::cout << "~~~~~~~~~~~~~ Menu Filtrage ~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour lancer le filtre median" << std::endl;
 	std::cout << "        - 2: pour lancer le filtre gaussien" << std::endl;
 }
-void Menu::affichageMenuOperationMorphologieMath() {
+void View::affichageMenuOperationMorphologieMath() {
 	std::cout << "~~~~~~~~~~~~~ Menu Operations de morphologie mathematique  ~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour lancer la dilatation" << std::endl;
 	std::cout << "        - 2:  pour lancer l'Erosion" << std::endl;
 
 }
-void Menu::affichageMenuSegmentationImage() {
+void View::affichageMenuSegmentationImage() {
 	std::cout << "~~~~~~~~~~~~~ Menu de Segmentations d’images ~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour lancer l'Operations de seuillages" << std::endl;
 	std::cout << "Tapez:  - 2: pour lancer la Segmentation par croissance de région" << std::endl;
@@ -32,7 +32,7 @@ void Menu::affichageMenuSegmentationImage() {
 using namespace cv;
 using namespace std;
 
-void voirImage::voirIm(cv::Mat _image, std::string _nom)
+void View::voirIm(cv::Mat _image, std::string _nom)
 {
 	namedWindow(_nom);
 	imshow(_nom, _image);                              //affichage de l'image
@@ -43,7 +43,7 @@ void voirImage::voirIm(cv::Mat _image, std::string _nom)
 
 }
 
-cv::Mat voirImage::Choisir()
+cv::Mat View::Choisir()
 {
 	// Création de la varible adresse de l'image
 	Mat image;                             //creation de l'image

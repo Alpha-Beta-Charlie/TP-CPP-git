@@ -1,7 +1,7 @@
 
 #pragma once
 #include <iostream>
-#include "voirImage.h"
+#include "View.h"
 # include <opencv2/opencv.hpp>
 #include "opencv2/imgproc.hpp"
 #include "opencv2/imgcodecs.hpp"
@@ -13,6 +13,7 @@ private:
 	int choix;
 public:
 	controlleur();
+	void setmenu(int _menu);
 	void setchoix(int _choix);
 	void instruction();
 };

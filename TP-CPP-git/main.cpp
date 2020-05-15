@@ -1,10 +1,9 @@
 #include <iostream>
-#include "voirImage.h"
-#include "Menu.h"
+#include "controlleur.h"
 using namespace cv;
 
 int main() {
-	Menu tt;
-	tt.choixMenu();
+	controlleur ctl;
+	ctl.instruction();
 	return 0;
 }

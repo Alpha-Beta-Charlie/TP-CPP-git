@@ -4,11 +4,24 @@ controlleur::controlleur()
 	:menu(0),choix(0)
 {}
 void controlleur::setchoix(int _choix)
-{}
+{
+	choix = _choix;
+	instruction();
+}
+void controlleur::setmenu(int _menu) {
+	menu = _menu;
+	instruction();
+}
+
+
 void controlleur::instruction()
 {
-	voirImage im;
-	if (menu == 0){}
+	View vue;
+	if (menu == 0){
+		Mat imagesec = vue.Choisir();
+		setmenu(1);
+
+	}
 	else if (menu == 1){}
 	else if (menu == 2){}
 	else if (menu == 3){

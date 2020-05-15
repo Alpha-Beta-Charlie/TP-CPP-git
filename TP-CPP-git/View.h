@@ -6,7 +6,7 @@
 class View
 {
 public:
-
+	View();
 	void affichageMenu();
 	void affichageMenuFlitrage();
 	void affichageMenuOperationMorphologieMath();
