@@ -23,41 +23,7 @@ Filtre::Filtre()
 {}
 
 void Filtre::FiltreGaussien(cv::Mat _image) {
-    /*
-    /// Applying Gaussian blur
-    if (display_caption("Gaussian Blur") != 0)
-    {
-        std::cout << "erreur";
-       
-    }
-
-    //![gaussianblur]
-    for (int i = 1; i < MAX_KERNEL_LENGTH; i = i + 2)
-    {
-        GaussianBlur(src, dst, Size(i, i), 0, 0);
-        if (display_dst(DELAY_BLUR) != 0)
-        {
-            std::cout << "erreur";
-        }
-    }
-    //![gaussianblur]
-
-    /// Applying Median blur
-    if (display_caption("Median Blur") != 0)
-    {
-        std::cout << "erreur";
-    }
-
-    //![medianblur]
-    for (int i = 1; i < MAX_KERNEL_LENGTH; i = i + 2)
-    {
-        medianBlur(src, dst, i);
-        if (display_dst(DELAY_BLUR) != 0)
-        {
-            std::cout << "erreur";
-        }
-    }
-    */
+ 
 }
 cv::Mat Filtre::FiltreMedian(cv::Mat _image) {
     Mat inter2;
