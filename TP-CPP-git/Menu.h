@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 # include "voirImage.h"
-# include "voirImage.h"
 #include "Filtre.h"
 #include "Derivation.h"
 class Menu

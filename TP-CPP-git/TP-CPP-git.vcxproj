@@ -141,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="controle.cpp" />
+    <ClCompile Include="controlleur.cpp" />
     <ClCompile Include="Derivation.cpp" />
     <ClCompile Include="DetectionDeContours.cpp" />
     <ClCompile Include="Filtre.cpp" />
@@ -154,7 +154,7 @@
     <ClCompile Include="voirImage.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="controle.h" />
+    <ClInclude Include="controlleur.h" />
     <ClInclude Include="Derivation.h" />
     <ClInclude Include="DetectionDeContours.h" />
     <ClInclude Include="Filtre.h" />

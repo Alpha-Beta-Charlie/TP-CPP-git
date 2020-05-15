@@ -1,1 +1,0 @@
-#include "controle.h"
