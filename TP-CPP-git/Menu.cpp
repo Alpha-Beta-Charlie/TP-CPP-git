@@ -65,7 +65,8 @@ debut:
 		}
 	}
 	else if (choix == 3) {
-		Mat imageGradient = ttfil.sobel(imagesec);
+		Derivation azer;
+		Mat imageGradient = azer.calculSobel(imagesec);
 		test.voirIm(imageGradient, "Image avec filtre gaussien");
 		goto debut;
 	}

@@ -21,9 +21,3 @@ cv::Mat Filtre::FiltreMedian(cv::Mat _image) {
     return inter2;
 }
 
-cv::Mat Filtre::sobel(cv::Mat _image)
-{
-    Mat inter3;
-    Sobel(_image, inter3, 5, 5, 3, 1, 0, BORDER_DEFAULT);
-    return inter3;
-}
