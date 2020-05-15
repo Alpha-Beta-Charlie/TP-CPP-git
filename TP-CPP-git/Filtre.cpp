@@ -1,16 +1,13 @@
 #include "Filtre.h"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/highgui.hpp"
 /*import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
-import org.opencv.imgproc.Imgproc;
+import org.opencv.imgproc.Imgproc;*/
 using namespace std;
 using namespace cv;
 
 
-/// Global Variables
+/*// Global Variables
 int DELAY_CAPTION = 1500;
 int DELAY_BLUR = 100;
 int MAX_KERNEL_LENGTH = 31;
@@ -22,8 +19,10 @@ char window_name[] = "Smoothing Demo";
 int display_caption(const char* caption);
 int display_dst(int delay);
 */
+Filtre::Filtre()
+{}
 
-void FiltreGaussien() {
+void Filtre::FiltreGaussien(cv::Mat _image) {
     /*
     /// Applying Gaussian blur
     if (display_caption("Gaussian Blur") != 0)
@@ -60,11 +59,10 @@ void FiltreGaussien() {
     }
     */
 }
-void FiltreMedian() {
-    cv::Mat imagesec = voirImage::partage;
-    cv::Mat image2;
-    medianBlur(imagesec, image2,15)
-
+cv::Mat Filtre::FiltreMedian(cv::Mat _image) {
+    Mat inter2;
+    medianBlur(_image, inter2, 15);
+    return inter2;
         /*
         import org.opencv.core.Core;
         import org.opencv.core.Mat;

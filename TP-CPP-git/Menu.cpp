@@ -35,12 +35,13 @@ void Menu::choixMenu() {
 	voirImage test;
 	Mat imagesec = test.Choisir();
 	Menu rt;
+	Filtre ttfil;
 debut:
 	rt.affichageMenu();
 	int choix;
 	std::cin >> choix;
 	if (choix == 1) {
-		test.voirIm(imagesec);
+		test.voirIm(imagesec, "Image originale");
 		goto debut;
 	}
 	else if (choix == 2) {
@@ -49,7 +50,9 @@ debut:
 		int rt;
 		std::cin >> rt;
 		if (rt == 1) {
-
+			Mat imageMedian = ttfil.FiltreMedian(imagesec);
+			test.voirIm(imageMedian, "image avec filtre median");
+			goto debut;
 		}
 		else if (rt == 2) {
 

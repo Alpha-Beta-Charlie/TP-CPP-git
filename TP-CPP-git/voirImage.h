@@ -8,7 +8,7 @@ public:
 
 	std::string AdresseIm;
 	cv::Mat partage;
-	 void voirIm(cv::Mat _image);
+	 void voirIm(cv::Mat _image, std::string _nom);
 	 cv::Mat Choisir();
 };
 

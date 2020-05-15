@@ -2,11 +2,12 @@
 using namespace cv;
 using namespace std;
 
-void voirImage::voirIm(cv::Mat _image)
+void voirImage::voirIm(cv::Mat _image, std::string _nom)
 {
-    namedWindow("image", WINDOW_NORMAL);
-    imshow("image", _image);                              //affichage de l'image
+    namedWindow(_nom);
+    imshow(_nom, _image);                              //affichage de l'image
     waitKey(0);
+    destroyWindow(_nom);
 
 
 
@@ -26,4 +27,4 @@ cv::Mat voirImage::Choisir()
     } while (image.empty() == true);
     return image;
 }
-cv::Mat partage= imread(voirImage::voirImage::AdresseIm)
+//cv::Mat partage= imread(voirImage::voirImage::AdresseIm)
