@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-# include "voirImage.h"
+# include "controlleur.h"
 #include "Filtre.h"
 #include "Derivation.h"
 class View
@@ -15,6 +15,8 @@ public:
 	cv::Mat partage;
 	void voirIm(cv::Mat _image, std::string _nom);
 	cv::Mat Choisir();
+	int reChoix();
+	int reMenu();
 };
 
 

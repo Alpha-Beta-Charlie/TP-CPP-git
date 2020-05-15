@@ -57,3 +57,17 @@ cv::Mat View::Choisir()
 	} while (image.empty() == true);
 	return image;
 }
+
+
+int View::reChoix()
+{
+	int choix;
+	std::cin >> choix;
+	return choix;
+}
+int View::reMenu() 
+{
+	int menu;
+	std::cin >> menu;
+	return menu;
+}

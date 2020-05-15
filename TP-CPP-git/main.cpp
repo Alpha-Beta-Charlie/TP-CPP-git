@@ -3,7 +3,7 @@
 using namespace cv;
 
 int main() {
-	controlleur ctl;
-	ctl.instruction();
+	controlleur ctlm;
+	ctlm.instruction();
 	return 0;
 }
