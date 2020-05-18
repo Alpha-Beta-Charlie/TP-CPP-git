@@ -17,7 +17,7 @@ public:
 	int reChoix();
 	int reMenu();
 	void voirIm(cv::Mat _image, std::string _nom);
-	void erreur();
+
 };
 
 

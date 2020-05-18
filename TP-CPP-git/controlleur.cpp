@@ -16,8 +16,9 @@ void controlleur::instruction()
 	Modèle mdl;
 
 	//------------------------------------------//
-
-	if (menu == 0){                                       // Affichage menu de base.
+	
+	if (menu == 0){  
+	                      // Affichage menu de base.
 		vue.affichageMenu();
 		setmenu(vue.reMenu());
 	}
@@ -26,6 +27,7 @@ void controlleur::instruction()
 
 	else if (menu == 1){                                       // Si l'utilisateur tape 1.
 		vue.voirIm(image,"Image originale");
+		
 		setmenu(0);
 	}
 
@@ -33,20 +35,23 @@ void controlleur::instruction()
 
 	else if (menu == 2){                                       // Si l'utilisateur tape 2.
 		vue.affichageMenuFlitrage();
+	menu2:
 		choix = vue.reChoix();
+		
 		if (choix == 1) {
 			mdl.FiltreMedian(image);
-			setmenu(0);
+			goto menu2;
+			
 		}
 		else if (choix == 2) {
 			mdl.FiltreGaussien(image);
-			setmenu(0);
+			goto menu2;
 		}
 		else if (choix == 3) {
 			setmenu(0);
 		}
 		else {
-			vue.erreur();
+			
 			instruction();
 		}
 	}
@@ -62,20 +67,20 @@ void controlleur::instruction()
 
 	else if (menu == 4){                                       // Si l'utilisateur tape 4.
 		vue.affichageMenuOperationMorphologieMath();
+		menu4:
 		choix = vue.reChoix();
 		if (choix == 1) {
 			mdl.Dilatation(image);
-			setmenu(0);
+			goto menu4;
 		}
 		else if (choix == 2) {
 			mdl.Erosion(image);
-			setmenu(0);
+			goto menu4;
 		}
 		else if (choix == 3) {
 			setmenu(0);
 		}
 		else {
-			vue.erreur();
 			instruction();
 		}
 	}
@@ -91,28 +96,31 @@ void controlleur::instruction()
 
 	else if (menu == 6){                                       // Si l'utilisateur tape 6.
 		vue.affichageMenuSegmentationImage();
+		menu6:
 		choix = vue.reChoix();
 		if (choix == 1) {
 			mdl.OperationSeuillage(image);
-			setmenu(0);
+			goto menu6;
 		}
 		else if (choix == 2) {
 			mdl.SegmentationRegion(image);
-			setmenu(0);
+			goto menu6;
 		}
 		else if (choix == 3) {
 			setmenu(0);
 		}
 		else {
-			vue.erreur();
+
 			instruction();
 		}
 	}
-
+	else if (choix == 7) {
+		std::cout << "enrevoir";                        //si 'utilisateur tape 7
+	}
 	//------------------------------------------//
 
 	else {
-		vue.erreur();
+		
 		setmenu(0);
 	}
 }
