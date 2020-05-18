@@ -21,11 +21,16 @@ void Modèle::FiltreGaussien(cv::Mat originale) {                                
     for (int i = 1; i < MAX_KERNEL_LENGTH; i = i + 2) {
         GaussianBlur(originale, inter, Size(i, i), 0, 0);
     }
+    
+   
+    vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
     vuemd.voirIm(inter, "Image modifier avec filtre Gaussien");
+    
 }
 void Modèle::FiltreMedian(cv::Mat originale) {                                       // Si l'utulisateur tape 2,1.
     Mat inter;
     medianBlur(originale, inter, 15);
+    vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
     vuemd.voirIm(inter, "Image modifier avec filtre Median");
 }
 
@@ -34,6 +39,7 @@ void Modèle::FiltreMedian(cv::Mat originale) {                                  
 void Modèle::calculSobel(cv::Mat originale) {                                       // Si l'utulisateur tape 3.
     Mat inter;
     Sobel(originale, inter,-1, 1, 0, 3,1, 0, BORDER_DEFAULT);
+    vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
     vuemd.voirIm(inter, "Image modifier avec calcule de gradien");
 }
 
@@ -42,6 +48,7 @@ void Modèle::calculSobel(cv::Mat originale) {                                   
 void Modèle::Dilatation(cv::Mat& originale) {                                       // Si l'utulisateur tape 4,1.
     Mat inter;
     dilate(originale,inter,Mat(), Point(-1,-1),3);
+    vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
     vuemd.voirIm(inter, "Image modifier avec une dilatation");
     
 }
@@ -50,6 +57,7 @@ void Modèle::Dilatation(cv::Mat& originale) {                                   
 void Modèle::Erosion(cv::Mat originale) {                                       // Si l'utulisateur tape 4,2.
     Mat inter;
     erode(originale, inter, Mat(), Point(-1, -1), 6);
+    vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
     vuemd.voirIm(inter, "Image modifier avec une erosion");
 }
 
@@ -58,6 +66,7 @@ void Modèle::Erosion(cv::Mat originale) {                                       
 void Modèle::canny(cv::Mat originale) {                                       // Si l'utulisateur tape 5.
     Mat inter;
     Canny(originale, inter, 100,5,5);
+    vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
     vuemd.voirIm(inter, "Image contouré");
 
 }
@@ -66,13 +75,19 @@ void Modèle::canny(cv::Mat originale) {                                       //
 
 void Modèle::OperationSeuillage(cv::Mat originale) {                                       // Si l'utulisateur tape 6,1.
     Mat inter;
+    threshold(originale, inter,50,255,THRESH_BINARY);
+
+    vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
+    vuemd.voirIm(inter, "Image seuille");
 
 
 }
 void Modèle::SegmentationRegion(cv::Mat originale) {                                       // Si l'utulisateur tape 6,2.
     Mat inter;
-
-
+   watershed(originale, inter);
+   //probleme
+   vuemd.voirIm(originale, "Image originale apuyer sur une touche pour voir le changement");
+   vuemd.voirIm(inter, "Image segmenté par regions");
 }
 
 //------------------------------------------------------------------------------------------------------------//

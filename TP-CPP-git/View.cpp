@@ -61,7 +61,7 @@ void View::voirIm(cv::Mat _image, std::string _nom)
 	imshow(_nom, _image);                              //affichage de l'image	waitKey(0);
 	waitKey(0);
 	destroyWindow(_nom);
-	//test
+	
 }
 
 void View::erreur() {

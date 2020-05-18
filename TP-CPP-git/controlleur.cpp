@@ -93,9 +93,11 @@ void controlleur::instruction()
 		vue.affichageMenuSegmentationImage();
 		choix = vue.reChoix();
 		if (choix == 1) {
+			mdl.OperationSeuillage(image);
 			setmenu(0);
 		}
 		else if (choix == 2) {
+			mdl.SegmentationRegion(image);
 			setmenu(0);
 		}
 		else if (choix == 3) {
