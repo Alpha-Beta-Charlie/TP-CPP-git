@@ -9,13 +9,14 @@ class Modèle
 {
 public:
 	Modèle();
-	void FiltreGaussien(cv::Mat _image);
-	void FiltreMedian(cv::Mat _image);
-	void calculSobel(cv::Mat _image);
-	void Dilatation();
-	void Erosion();
-	void Canny();
-	void OperationSeuillage();
-	void SegmentationRegion();
+	void AfficherImage(cv::Mat originale);
+	void FiltreGaussien(cv::Mat originale);
+	void FiltreMedian(cv::Mat originale);
+	void calculSobel(cv::Mat originale);
+	void Dilatation(cv::Mat originale);
+	void Erosion(cv::Mat originale);
+	void Canny(cv::Mat originale);
+	void OperationSeuillage(cv::Mat originale);
+	void SegmentationRegion(cv::Mat originale);
 };
 
