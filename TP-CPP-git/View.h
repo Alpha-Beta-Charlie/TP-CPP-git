@@ -1,8 +1,11 @@
 #pragma once
 #include <iostream>
-# include "controlleur.h"
-#include "Filtre.h"
-#include "Derivation.h"
+#include "controlleur.h"
+#include <opencv2/opencv.hpp>
+#include "opencv2/imgproc.hpp"
+#include "opencv2/imgcodecs.hpp"
+#include "opencv2/highgui.hpp"
+
 class View
 {
 public:
@@ -11,12 +14,9 @@ public:
 	void affichageMenuFlitrage();
 	void affichageMenuOperationMorphologieMath();
 	void affichageMenuSegmentationImage();
-	std::string AdresseIm;
-	cv::Mat partage;
-	void voirIm(cv::Mat _image, std::string _nom);
-	cv::Mat Choisir();
 	int reChoix();
 	int reMenu();
+	void voirIm(cv::Mat _image, std::string _nom);
 };
 
 

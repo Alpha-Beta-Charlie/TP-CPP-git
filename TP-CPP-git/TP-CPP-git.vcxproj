@@ -142,28 +142,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="controlleur.cpp" />
-    <ClCompile Include="Derivation.cpp" />
-    <ClCompile Include="DetectionDeContours.cpp" />
-    <ClCompile Include="Filtre.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Modèle.cpp" />
-    <ClCompile Include="OperationMath.cpp" />
-    <ClCompile Include="SegmentationImage.cpp" />
     <ClCompile Include="View.cpp" />
-    <ClCompile Include="voirImage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="controlleur.h" />
-    <ClInclude Include="Derivation.h" />
-    <ClInclude Include="DetectionDeContours.h" />
-    <ClInclude Include="Filtre.h" />
-    <ClInclude Include="Menu.h" />
     <ClInclude Include="Modèle.h" />
-    <ClInclude Include="OperationMath.h" />
-    <ClInclude Include="SegmentationImage.h" />
     <ClInclude Include="View.h" />
-    <ClInclude Include="voirImage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

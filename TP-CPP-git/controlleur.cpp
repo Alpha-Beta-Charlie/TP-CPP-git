@@ -1,7 +1,8 @@
 #include "controlleur.h"
-
-controlleur::controlleur()
-	:menu(-1),choix(0)
+using namespace cv;
+using namespace std;
+controlleur::controlleur(cv::Mat _image)
+	:menu(0),choix(0),image(_image)
 {}
 void controlleur::setchoix(int _choix)
 {
@@ -17,26 +18,24 @@ void controlleur::setmenu(int _menu) {
 void controlleur::instruction()
 {
 	View vue;
-	Mat imagesec;
-	if (menu == -1) {
-		imagesec = vue.Choisir();
-		setmenu(0);
-	}
-	else if (menu == 0){
+	Modèle mdl;
+	if (menu == 0){
 		vue.affichageMenu();
 		setmenu(vue.reMenu());
 	}
 	else if (menu == 1){
-		vue.voirIm(imagesec, "Image originale");
+		vue.voirIm(image,"Image originale");;
 		setmenu(0);
 	}
 	else if (menu == 2){
 		vue.affichageMenuFlitrage();
 		choix = vue.reChoix();
 		if (choix == 1) {
+			mdl.FiltreMedian(image);
 			setmenu(0);
 		}
 		else if (choix == 2) {
+			mdl.FiltreGaussien(image);
 			setmenu(0);
 		}
 	}

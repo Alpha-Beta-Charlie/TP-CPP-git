@@ -3,7 +3,6 @@ using namespace std;
 using namespace cv;
 
 
-int MAX_KERNEL_LENGTH = 31;
 
 Filtre::Filtre()
 {}
