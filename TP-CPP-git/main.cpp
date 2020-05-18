@@ -20,7 +20,7 @@ int main() {
 
 		waitKey(0);
 		destroyAllWindows();
-
+		//fin
 		return 0;
 
 }
