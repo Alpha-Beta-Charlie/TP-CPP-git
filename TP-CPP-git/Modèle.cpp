@@ -57,8 +57,8 @@ void Modèle::Erosion(cv::Mat originale) {                                       
 
 void Modèle::canny(cv::Mat originale) {                                       // Si l'utulisateur tape 5.
     Mat inter;
-    Canny(originale,inter,1,5)
-  //  Canny(gray0, gray, 10, 20, 3);
+    Canny(originale, inter, 100,5,5);
+    vuemd.voirIm(inter, "Image contouré");
 
 }
 

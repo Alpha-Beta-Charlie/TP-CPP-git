@@ -82,8 +82,8 @@ void controlleur::instruction()
 
 	//------------------------------------------//
 
-	else if (menu == 5){                                       // Si l'utilisateur tape 5.
-
+	else if (menu == 5){         // Si l'utilisateur tape 5.
+		mdl.canny(image);
 		setmenu(0);
 	}
 
