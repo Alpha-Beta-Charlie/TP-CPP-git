@@ -57,7 +57,7 @@ void Modèle::Erosion(cv::Mat originale) {                                       
 
 void Modèle::Canny(cv::Mat originale) {                                       // Si l'utulisateur tape 5.
     Mat inter;
-    Canny(originale,inter,1,5)
+   // Canny(originale, inter, 1, 5);
   //  Canny(gray0, gray, 10, 20, 3);
 
 }
