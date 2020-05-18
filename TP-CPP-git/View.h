@@ -10,12 +10,19 @@ class View
 {
 public:
 	View();
+
 	void affichageMenu();
+
 	void affichageMenuFlitrage();
+
 	void affichageMenuOperationMorphologieMath();
+
 	void affichageMenuSegmentationImage();
+
 	int reChoix();
+
 	int reMenu();
+
 	void voirIm(cv::Mat _image, std::string _nom);
 
 };

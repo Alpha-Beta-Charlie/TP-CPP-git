@@ -22,6 +22,7 @@ void View::affichageMenu()
 }
 
 void View::affichageMenuFlitrage() {
+	
 	system("CLS");
 	std::cout << "~~~~~~~~~~~~~~~~~~ Menu Filtrage ~~~~~~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour lancer le filtre median." << std::endl;
@@ -30,6 +31,7 @@ void View::affichageMenuFlitrage() {
 }
 
 void View::affichageMenuOperationMorphologieMath() {
+	
 	system("CLS");
 	std::cout << "~~~~~~~~~~~~~ Menu Operations de morphologie mathematique  ~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour lancer la dilatation." << std::endl;
@@ -38,6 +40,7 @@ void View::affichageMenuOperationMorphologieMath() {
 }
 
 void View::affichageMenuSegmentationImage() {
+	
 	system("CLS");
 	std::cout << "~~~~~~~~~~~~~~~~~~ Menu de Segmentations d’images ~~~~~~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour lancer l'Operations de seuillages." << std::endl;

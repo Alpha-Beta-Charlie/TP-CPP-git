@@ -10,13 +10,21 @@ class Modèle
 public:
 	Modèle();
 	void AfficherImage(cv::Mat originale);
+
 	void FiltreGaussien(cv::Mat originale);
+
 	void FiltreMedian(cv::Mat originale);
+
 	void calculSobel(cv::Mat originale);
+
 	void Dilatation(cv::Mat& originale);
+
 	void Erosion(cv::Mat originale);
+
 	void canny(cv::Mat originale);
+
 	void OperationSeuillage(cv::Mat originale);
+
 	void SegmentationRegion(cv::Mat originale);
 };
 

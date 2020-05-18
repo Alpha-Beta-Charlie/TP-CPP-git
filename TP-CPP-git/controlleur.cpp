@@ -4,6 +4,7 @@ using namespace std;
 controlleur::controlleur(cv::Mat _image)
 	:menu(0),choix(0),image(_image)
 {}
+
 void controlleur::setmenu(int _menu) {
 	menu = _menu;
 	instruction();

@@ -10,12 +10,18 @@
 class controlleur
 {
 private:
+
 	cv::Mat image;
+
 	int menu;
+
 	int choix;
 public:
+
 	controlleur(cv::Mat _image);
+
 	void setmenu(int _menu);
+
 	int instruction();
 };
 
