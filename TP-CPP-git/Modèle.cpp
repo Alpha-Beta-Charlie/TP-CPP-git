@@ -33,7 +33,7 @@ void Modèle::FiltreMedian(cv::Mat originale) {                                  
 
 void Modèle::calculSobel(cv::Mat originale) {                                       // Si l'utulisateur tape 3.
     Mat inter;
-    Sobel(originale, inter, -1, 2, 1, 1, 0, BORDER_DEFAULT);
+    Sobel(originale, inter,-1, 1, 0, 3,1, 0, BORDER_DEFAULT);
     vuemd.voirIm(inter, "Image modifier avec calcule de gradien");
 }
 
