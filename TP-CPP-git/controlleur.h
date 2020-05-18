@@ -16,6 +16,6 @@ private:
 public:
 	controlleur(cv::Mat _image);
 	void setmenu(int _menu);
-	void instruction();
+	int instruction();
 };
 
