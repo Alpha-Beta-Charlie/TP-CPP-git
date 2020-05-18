@@ -15,7 +15,7 @@ public:
 	void calculSobel(cv::Mat originale);
 	void Dilatation(cv::Mat& originale);
 	void Erosion(cv::Mat originale);
-	void Canny(cv::Mat originale);
+	void canny(cv::Mat originale);
 	void OperationSeuillage(cv::Mat originale);
 	void SegmentationRegion(cv::Mat originale);
 };
