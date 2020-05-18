@@ -13,7 +13,7 @@ public:
 	void FiltreGaussien(cv::Mat originale);
 	void FiltreMedian(cv::Mat originale);
 	void calculSobel(cv::Mat originale);
-	void Dilatation(cv::Mat originale);
+	void Dilatation(cv::Mat& originale);
 	void Erosion(cv::Mat originale);
 	void Canny(cv::Mat originale);
 	void OperationSeuillage(cv::Mat originale);

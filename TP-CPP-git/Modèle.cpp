@@ -39,23 +39,17 @@ void Modèle::calculSobel(cv::Mat originale) {                                   
 
 //------------------------------------------------------------------------------------------------------------//
 
-void Modèle::Dilatation(cv::Mat originale) {                                       // Si l'utulisateur tape 4,1.
+void Modèle::Dilatation(cv::Mat& originale) {                                       // Si l'utulisateur tape 4,1.
     Mat inter;
-    int element_shape = MORPH_RECT;
-    int n = 0;
-    int an = abs(n);
-    Mat element = getStructuringElement(element_shape, Size(an * 2 + 1, an * 2 + 1), Point(an, an));
-    dilate(originale, inter, element);
+    dilate(originale,inter,Mat(), Point(-1,-1),3);
     vuemd.voirIm(inter, "Image modifier avec une dilatation");
+    
 }
+
 
 void Modèle::Erosion(cv::Mat originale) {                                       // Si l'utulisateur tape 4,2.
     Mat inter;
-    int element_shape = MORPH_RECT;
-    int n = 0;
-    int an = abs(n);
-    Mat element = getStructuringElement(element_shape, Size(an * 2 + 1, an * 2 + 1), Point(an, an));
-    erode(originale, inter, element);
+    erode(originale, inter, Mat(), Point(-1, -1), 6);
     vuemd.voirIm(inter, "Image modifier avec une erosion");
 }
 
@@ -63,7 +57,8 @@ void Modèle::Erosion(cv::Mat originale) {                                       
 
 void Modèle::Canny(cv::Mat originale) {                                       // Si l'utulisateur tape 5.
     Mat inter;
-    
+    Canny(originale,inter,1,5)
+  //  Canny(gray0, gray, 10, 20, 3);
 
 }
 
