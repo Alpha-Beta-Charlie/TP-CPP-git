@@ -17,8 +17,6 @@ int main() {
 
 		controlleur ctlm(image);
 		ctlm.instruction();
-
-		waitKey(0);
 		destroyAllWindows();
 		//fin
 		return 0;

@@ -105,6 +105,7 @@ void Modèle::OperationSeuillage(cv::Mat originale) {                            
 void Modèle::SegmentationRegion(cv::Mat originale) {                                       // Si l'utulisateur tape 6,2.
    
     Mat inter;
+   // cv::Mat markers = cv::Mat::zeros(dist.size(), CV_32SC1);
    watershed(originale, inter);
    
    imshow("Image originale", originale);

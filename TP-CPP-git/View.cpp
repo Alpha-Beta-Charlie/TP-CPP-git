@@ -44,7 +44,7 @@ void View::affichageMenuSegmentationImage() {
 	system("CLS");
 	std::cout << "~~~~~~~~~~~~~~~~~~ Menu de Segmentations d’images ~~~~~~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour lancer l'Operations de seuillages." << std::endl;
-	std::cout << "Tapez:  - 2: pour lancer la Segmentation par croissance de région." << std::endl;
+	std::cout << "Tapez:  - 2: pour lancer la Segmentation par croissance de region." << std::endl;
 	std::cout << "        - 3: pour retourner en arriere." << std::endl;
 }
 

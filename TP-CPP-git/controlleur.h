@@ -22,6 +22,6 @@ public:
 
 	void setmenu(int _menu);
 
-	int instruction();
+	void instruction();
 };
 

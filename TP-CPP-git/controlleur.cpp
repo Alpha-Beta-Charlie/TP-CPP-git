@@ -11,7 +11,7 @@ void controlleur::setmenu(int _menu) {
 }
 
 
-int controlleur::instruction()
+void controlleur::instruction()
 {
 	View vue;
 	Modèle mdl;
@@ -116,8 +116,10 @@ int controlleur::instruction()
 		}
 	}
 	else if (choix == 7) {
-		std::cout << "enrevoir";     //si 'utilisateur tape 7
-		return 0;
+		std::cout << "enrevoir"; 
+		                                    //si 'utilisateur tape 7
+		
+		
 	}
 	//------------------------------------------//
 
@@ -125,5 +127,6 @@ int controlleur::instruction()
 		
 		setmenu(0);
 	}
-	return 0;
+
+
 }
