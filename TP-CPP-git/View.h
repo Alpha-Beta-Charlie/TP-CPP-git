@@ -15,9 +15,21 @@ public:
 
 	void affichageMenuFlitrage();
 
+	void typesDeFiltrageMedian();
+	
+	void typesDeFiltrageGauss();
+
 	void affichageMenuOperationMorphologieMath();
 
+	void menuDilatation();
+
+	void  menuErosion();
+
 	void affichageMenuSegmentationImage();
+
+	void menuOperationSeuillages();
+
+	void menuCanny();
 
 	int reChoix();
 

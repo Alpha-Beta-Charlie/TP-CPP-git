@@ -16,6 +16,8 @@ private:
 	int menu;
 
 	int choix;
+
+	int decision;
 public:
 
 	controlleur(cv::Mat _image);
