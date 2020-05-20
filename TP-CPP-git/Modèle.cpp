@@ -10,7 +10,7 @@ Modèle::Modèle()
 
 //------------------------------------------------------------------------------------------------------------//
 
-void AfficherImage(cv::Mat originale) {                                       // Si l'utulisateur tape 1.
+void  Modèle::AfficherImage(cv::Mat originale) {                                       // Si l'utulisateur tape 1.
     vuemd.voirIm(originale, "Image originale");
 }
 
