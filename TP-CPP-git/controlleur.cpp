@@ -228,7 +228,6 @@ void controlleur::instruction()
 		}
 	}
 	else if (menu == 7) {
-		std::cout << "a bientot"; 
 		exit(0);                                  //si 'utilisateur tape 7
 		
 		

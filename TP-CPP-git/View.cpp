@@ -96,9 +96,9 @@ void View::menuOperationSeuillages() {
 void View::menuCanny() {
 	system("CLS");
 	std::cout << "~~~~~~~~~~~~~~~~~~ Menu de la detection de contours de votre image.~~~~~~~~~~~~~~~~~" << std::endl;
-	std::cout << ":  Tapez- 1: pour lancer une detection de contours faible." << std::endl;
+	std::cout << ":  Tapez- 1: pour lancer une detection de contours forte." << std::endl;
 	std::cout << ":       - 2: pour lancer unedetection de contours moyenne." << std::endl;
-	std::cout << ":       - 3: pour lancer une detection de contours forte." << std::endl;
+	std::cout << ":       - 3: pour lancer une detection de contours faible." << std::endl;
 	std::cout << "        - 4: pour retourner en arriere." << std::endl;
 
 }
