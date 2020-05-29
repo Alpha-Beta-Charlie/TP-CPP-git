@@ -13,10 +13,10 @@ void View::affichageMenu()
 	std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
 	std::cout << "Tapez:  - 1: pour voir votre image." << std::endl;
 	std::cout << "        - 2: Pour rentrer dans le menu 'filtre'. " << std::endl;
-	std::cout << "        - 3: Pour lancer le calcule du gradient de votre image. " << std::endl;
+	std::cout << "        - 3: Pour lancer le calcul du gradient de votre image. " << std::endl;
 	std::cout << "        - 4: Pour rentrer dans le menu 'Operation de morphologie mathematique'. " << std::endl;
-	std::cout << "        - 5: Pour lancer la detection de contour de votre image." << std::endl;
-	std::cout << "        - 6: Pour rentrez dans le menu 'Segmentation d'image'. " << std::endl;
+	std::cout << "        - 5: Pour lancer la détection de contour de votre image." << std::endl;
+	std::cout << "        - 6: Pour rentrer dans le menu 'Segmentation d'image'. " << std::endl;
 	std::cout << "        - 7: Pour quitter" << std::endl;
 	std::cout << "\n" << std::endl;
 }
